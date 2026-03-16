@@ -21,12 +21,23 @@ const navItems = [
 
 const AppLayout = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [utcTime, setUtcTime] = useState('');
+  const [istTime, setIstTime] = useState('');
   const sidebarRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const tick = () => setUtcTime(new Date().toUTCString());
+    const tick = () => setIstTime(
+      new Date().toLocaleString('en-IN', {
+        timeZone: 'Asia/Kolkata',
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+      }) + ' IST'
+    );
     tick();
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
@@ -128,7 +139,7 @@ const AppLayout = () => {
 
             <div className="hidden md:block text-[10px] font-mono-space text-muted-foreground">
               <span className="mr-4 text-[9px] tracking-[0.3em] text-muted-foreground/60">GAS DETECTION SYSTEM</span>
-              UTC: {utcTime}
+              IST: {istTime}
             </div>
           </div>
 
