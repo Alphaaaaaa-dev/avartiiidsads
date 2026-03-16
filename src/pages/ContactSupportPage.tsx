@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Phone, Mail, MessageSquare, Clock, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const TARGET_EMAIL = 'Info.udgam.official.1221@gmail.com';
+const TARGET_EMAIL = 'chaudharydiya536@gmail.com';
 
 interface FormErrors {
   name?: string;
@@ -75,14 +75,14 @@ const ContactSupportPage = () => {
               <Phone size={14} className="text-destructive flex-shrink-0" />
               <span className="font-display text-xs tracking-wider text-destructive">24/7 EMERGENCY LINE</span>
             </div>
-            <div className="font-display text-xl text-foreground mb-0.5">91092xxxxx</div>
-            <div className="text-[10px] font-mono-space text-muted-foreground">910921xxxx</div>
+            <div className="font-display text-xl text-foreground mb-0.5">+91 9636711659</div>
+            <div className="text-[10px] font-mono-space text-muted-foreground">+91 6376011942</div>
           </div>
 
           <div className="bg-card border border-border p-4 space-y-3">
             <h3 className="font-display text-xs tracking-wider text-foreground">SUPPORT CHANNELS</h3>
             {[
-              { icon: Phone, label: 'Technical Support', value: '91092xxxxx', sub: 'Mon-Fri 8AM-6PM IST' },
+              { icon: Phone, label: 'Technical Support', value: '9109217344', sub: 'Mon-Fri 8AM-6PM IST' },
               { icon: Mail, label: 'Email Support', value: TARGET_EMAIL, sub: 'Response within 4 hours' },
               { icon: MessageSquare, label: 'Live Chat', value: 'Available 24/7', sub: 'Avg. wait: 2 minutes' },
             ].map(ch => (
@@ -102,7 +102,7 @@ const ContactSupportPage = () => {
             <div className="flex items-start gap-2">
               <MapPin size={13} className="text-primary mt-0.5 flex-shrink-0" />
               <div className="text-[10px] font-body text-muted-foreground leading-relaxed">
-                Poornima University<br />
+                addddreesssssss<br />
                 Sitapura Extension, Vidhani<br />
                 Jaipur – 303905, India
               </div>
@@ -122,7 +122,7 @@ const ContactSupportPage = () => {
               { name: 'Prateek Sharma', role: 'Front and Back End Developer ' },
               { name: 'Bhavya Gaur', role: 'Back End Developer (Scensors)' },
               { name: 'Kavyansh Pareek', role: 'R&A Analyst' },
-              { name: 'Akshita Kumawat', role: 'Front End Developer' },
+              { name: 'Akshita Kumawat', role: 'Designer' },
             ].map(p => (
               <div key={p.name} className="flex items-center justify-between py-2 border-b border-border last:border-0 gap-2">
                 <div className="min-w-0">
